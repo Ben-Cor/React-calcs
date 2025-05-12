@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import CalcBasic from './components/CalcBasic'
-import InvestmentInputs from './components/InvestmentInputs'
+import InvestmentCalc from './components/InvestmentCalc'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +10,7 @@ function App() {
     <div className='bg-gray-100 min-h-screen'>
       <Header />
       <CalcBasic />
-      <InvestmentInputs />
+      <InvestmentCalc />
     </div>
   )
 }

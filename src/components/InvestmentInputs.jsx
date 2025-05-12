@@ -1,43 +1,7 @@
-import { useState } from "react"
-
-export default function InvestmentInputs() {
-
-const [userInput, setUserInput] = useState({
-  initialInvestment: 10000,
-  annualInvestment: 1000,
-  interestRate: 5,
-  years: 30, 
-});
-
-const handleChangeInput = (inputId, newValue) => {
-    if (isNaN(newValue)) {
-        alert("Please enter a valid number");
-        return;
-    }
-
-    if (newValue < 0) {
-        alert("Please enter a positive number");
-        return;
-    }
-    
-    setUserInput((prevState) => ({
-        ...prevState,
-        [inputId]: newValue,
-    }));
-}
-
-const handleClickReset = (e) => {
-    e.preventDefault();
-    setUserInput({
-        initialInvestment: 10000,
-        annualInvestment: 1000,
-        interestRate: 5,
-        years: 30, 
-    });
-}
+export default function InvestmentInputs({userInput, handleChangeInput, handleClickReset}) {
 
   return (
-    <div className="flex items-center justify-center py-20">
+    <div className="flex items-center justify-center pt-20 pb-4">
         <div className="flex flex-col items-center justify-center border-[1px] rounded-lg shadow-lg w-[60%] pb-4">
             <form className="flex text-start justify-end items-end w-auto gap-2 p-4" action="">
                 <div className="flex flex-col align-center justify-center gap-1">
