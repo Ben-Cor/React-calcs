@@ -6,7 +6,7 @@ export default function CalcButton({ value, onClick }) {
   return (
     <button
       ref={buttonRef}
-      className="p-4 bg-slate-200 m-1 shadow-md/20 rounded-md"
+      className="p-4 bg-slate-200 m-1 shadow-md/20 rounded-md text-center"
       onClick={onClick}
       onMouseDown={() => {
         if (buttonRef.current) {

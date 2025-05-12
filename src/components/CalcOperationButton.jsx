@@ -6,7 +6,7 @@
       return (
         <button
           ref={buttonRef}
-          className="p-4 bg-blue-300 m-1 shadow-md/20 rounded-md"
+          className="p-4 bg-blue-300 m-1 shadow-md/20 rounded-md text-center w-[75px]"
           onClick={onClick}
           onMouseDown={() => {
             if (buttonRef.current) {
