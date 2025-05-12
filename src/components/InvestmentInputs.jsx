@@ -2,7 +2,19 @@ import { useState } from "react"
 
 export default function InvestmentInputs() {
 
-const [userInput, setUserInput] = useState({});
+const [userInput, setUserInput] = useState({
+  initialInvestment: 10000,
+  annualInvestment: 1000,
+  interestRate: 5,
+  years: 30, 
+});
+
+const handleChangeInput = (inputId, newValue) => {
+    setUserInput((prevState) => ({
+        ...prevState,
+        [inputId]: newValue,
+    }));
+}
 
   return (
     <div>
