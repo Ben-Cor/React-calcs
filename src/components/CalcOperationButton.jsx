@@ -7,7 +7,7 @@
         <button
           ref={buttonRef}
           className="p-4 bg-blue-300 m-1 shadow-md/20 rounded-md text-center w-[75px]"
-          onClick={onClick}
+          onClick={() => onClick(value)}
           onMouseDown={() => {
             if (buttonRef.current) {
               buttonRef.current.classList.remove("shadow-md/20");

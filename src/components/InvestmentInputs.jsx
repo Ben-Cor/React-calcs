@@ -21,7 +21,9 @@ export default function InvestmentInputs({userInput, handleChangeInput, handleCl
                     <input className="border-[1px] text-end w-[150px]" id="years" name="years" value={userInput.years} onChange={(e) => {handleChangeInput(e.target.id, e.target.value)}} type="number" required />
                 </div>
             </form>
-            <button className="bg-blue-300 p-2 mt-2 rounded-xl shadow-xl " onClick={handleClickReset}>Reset</button>
+            <div>
+                <button className="bg-blue-300 p-2 mt-2 rounded-xl shadow-xl ml-6" onClick={handleClickReset}>Reset</button>
+            </div>
         </div>
     </div>
   );
