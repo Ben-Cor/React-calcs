@@ -1,7 +1,7 @@
 export default function InvestmentInputs({userInput, handleChangeInput, handleClickReset}) {
 
   return (
-    <div className="flex items-center justify-center pt-20 pb-4">
+    <div className="flex items-center justify-center pt-4 pb-4">
         <div className="flex flex-col items-center justify-center border-[1px] rounded-lg shadow-lg w-[60%] pb-4">
             <form className="flex text-start justify-end items-end w-auto gap-2 p-4" action="">
                 <div className="flex flex-col align-center justify-center gap-1">
