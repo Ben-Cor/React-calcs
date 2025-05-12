@@ -16,6 +16,16 @@ const handleChangeInput = (inputId, newValue) => {
     }));
 }
 
+const handleClickReset = (e) => {
+    e.preventDefault();
+    setUserInput({
+        initialInvestment: 10000,
+        annualInvestment: 1000,
+        interestRate: 5,
+        years: 30, 
+    });
+}
+
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 pb-10">
         <form className="flex flex-col justify-end items-end w-auto gap-2" action="">
@@ -35,6 +45,7 @@ const handleChangeInput = (inputId, newValue) => {
                 <label htmlFor="years">Years</label>
                 <input className="border-[1px] text-end w-[150px]" id="years" name="years" value={userInput.years} onChange={(e) => {handleChangeInput(e.target.id, e.target.value)}} type="number" required />
             </div>
+            <button className="bg-blue-300 p-2 mt-2 rounded-xl shadow-xl " onClick={handleClickReset}>Reset</button>
         </form>
     </div>
   );
