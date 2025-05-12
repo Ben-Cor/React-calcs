@@ -1,16 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import CalcButton from './components/CalcButton'
-import CalcOperationButton from './components/CalcOperationButton'
+import Header from './components/Header'
+import CalcBasic from './components/CalcBasic'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <CalcButton value="1" onClick={() => setCount(count + 1)} />
-      <CalcOperationButton value="+" onClick={() => setCount(count + 1)} />
+      <Header />
+      <CalcBasic />
     </div>
   )
 }
