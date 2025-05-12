@@ -1,4 +1,4 @@
-export default function InvestmentInputs({userInput, handleChangeInput, handleClickReset}) {
+export default function InvestmentInputs({userInput, handleChangeInput, handleClickReset, error}) {
 
   return (
     <div className="flex items-center justify-center pt-4 pb-4">
@@ -24,6 +24,7 @@ export default function InvestmentInputs({userInput, handleChangeInput, handleCl
             <div>
                 <button className="bg-blue-300 p-2 mt-2 rounded-xl shadow-xl ml-6" onClick={handleClickReset}>Reset</button>
             </div>
+            <p className="text-center pt-4 text-red-700">{error}</p>
         </div>
     </div>
   );
