@@ -8,7 +8,7 @@ export default function InvestmentCalc () {
     initialInvestment: 10000,
     annualInvestment: 1000,
     interestRate: 5,
-    years: 30, 
+    years: 20, 
     });
 
     const [errorMessage, setErrorMessage] = useState("");
@@ -21,6 +21,15 @@ export default function InvestmentCalc () {
 
     if (newValue < 0) {
         setErrorMessage("Please enter a positive number");
+        return;
+    }
+
+    if (newValue === "") {
+        setErrorMessage("This field cannot be empty");
+        setUserInput((prevState) => ({
+            ...prevState,
+            [inputId]: "",
+        }));
         return;
     }
     
