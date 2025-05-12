@@ -5,22 +5,21 @@ export default function InvestmentOuputs({ userInput }) {
 
         let currentAmount = initialInvestment;
 
-        for (let i = 0; i < years; i++) {
-            currentAmount += annualInvestment;
-            const interest = (currentAmount * interestRate) / 100;
-            currentAmount += interest;
-        }
+        for (let i = 1; i <= years; i++) {
+        currentAmount += annualInvestment; // Add annual investment
+        const interest = (currentAmount * interestRate) / 100; // Calculate interest for the year
+        currentAmount += interest; // Add interest to the current amount
 
         results.push({
-            year: years,
+            year: i,
             investmentValue: currentAmount,
-            interestPerYear: (currentAmount * interestRate) / 100,
-            totalInterest: currentAmount - initialInvestment - (annualInvestment * years),
-            investedCapital: initialInvestment + (annualInvestment * years),
+            interestPerYear: interest,
+            totalInterest: currentAmount - initialInvestment - (annualInvestment * i),
+            investedCapital: initialInvestment + (annualInvestment * i),
         });
-
-        return results;
     }
+    return results;
+}
 
 
     const results = calculateInvestmentResults({
@@ -44,8 +43,8 @@ export default function InvestmentOuputs({ userInput }) {
                     </tr>
                 </thead>
                 <tbody>
-                {results.map((yearData, index) => (
-                        <tr className="border-b-[1px] border-gray-700" key={index} >
+                    {results.map((yearData, index) => (
+                        <tr className="border-b-[1px] border-gray-700" key={index}>
                             <td className="border-r-[1px]">{yearData.year}</td>
                             <td className="border-r-[1px]">{yearData.investmentValue.toFixed(2)}</td>
                             <td className="border-r-[1px]">{yearData.interestPerYear.toFixed(2)}</td>
@@ -56,6 +55,5 @@ export default function InvestmentOuputs({ userInput }) {
                 </tbody>
             </table>
         </div>
-        
-    )
+    );
 }
