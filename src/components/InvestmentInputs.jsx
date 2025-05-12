@@ -10,6 +10,16 @@ const [userInput, setUserInput] = useState({
 });
 
 const handleChangeInput = (inputId, newValue) => {
+    if (isNaN(newValue)) {
+        alert("Please enter a valid number");
+        return;
+    }
+
+    if (newValue < 0) {
+        alert("Please enter a positive number");
+        return;
+    }
+    
     setUserInput((prevState) => ({
         ...prevState,
         [inputId]: newValue,
