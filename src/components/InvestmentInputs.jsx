@@ -17,23 +17,23 @@ const handleChangeInput = (inputId, newValue) => {
 }
 
   return (
-    <div>
-        <form action="">
-            <div>
-                <label htmlFor="initialInvestment">Intitial Investment</label>
-                <input id="initialInvestment" name="initialInvestment" type="number" required />
+    <div className="flex flex-col items-center justify-center bg-gray-100 pb-10">
+        <form className="flex flex-col justify-end items-end w-auto gap-2" action="">
+            <div className="flex align-center justify-center gap-2">
+                <label htmlFor="initialInvestment">Initial Investment</label>
+                <input className="border-[1px] text-end w-[150px]" id="initialInvestment" name="initialInvestment" value={userInput.initialInvestment} onChange={(e) => {handleChangeInput(e.target.id, e.target.value)}} type="number" required />
             </div>
-            <div>
+            <div className="flex align-center justify-center gap-2">
                 <label htmlFor="annualInvestment">Annual Investment</label>
-                <input id="annualInvestment" name="annualInvestment" type="number" required />
+                <input className="border-[1px] text-end w-[150px]" id="annualInvestment" name="annualInvestment" value={userInput.annualInvestment} onChange={(e) => {handleChangeInput(e.target.id, e.target.value)}} type="number" required />
             </div>
-            <div>
+            <div className="flex align-center justify-center gap-2">
                 <label htmlFor="interestRate">Interest Rate</label>
-                <input id="interestRate" name="interestRate" type="number" required />
+                <input className="border-[1px] text-end w-[150px]" id="interestRate" name="interestRate" value={userInput.interestRate} onChange={(e) => {handleChangeInput(e.target.id, e.target.value)}} type="number" required />
             </div>
-            <div>
+            <div className="flex align-center justify-center gap-2">
                 <label htmlFor="years">Years</label>
-                <input id="years" name="years" type="number" required />
+                <input className="border-[1px] text-end w-[150px]" id="years" name="years" value={userInput.years} onChange={(e) => {handleChangeInput(e.target.id, e.target.value)}} type="number" required />
             </div>
         </form>
     </div>
