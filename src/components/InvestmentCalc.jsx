@@ -24,7 +24,7 @@ export default function InvestmentCalc () {
         return;
     }
 
-    if (newValue === "") {
+    if (newValue === "" || newValue === null || newValue == 0) {
         setErrorMessage("This field cannot be empty");
         setUserInput((prevState) => ({
             ...prevState,
