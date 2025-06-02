@@ -4,9 +4,9 @@ export default function Header() {
         <h1 className="text-2xl font-bold">Calculators</h1>
         <nav>
             <ul className="flex space-x-4">
-            <li><a href="#home" className="hover:underline">Home</a></li>
-            <li><a href="#about" className="hover:underline">About</a></li>
-            <li><a href="#contact" className="hover:underline">Contact</a></li>
+            <li><a href="#basic" className="hover:underline">Basic Calculator</a></li>
+            <li><a href="#investment" className="hover:underline">Investment Calculator</a></li>
+            <li><a href="#mortgage" className="hover:underline">Mortgage Calculator</a></li>
             </ul>
         </nav>
         </header>
