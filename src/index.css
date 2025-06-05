@@ -1,1 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-handjet: 'Handjet', sans-serif;
+}

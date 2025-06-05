@@ -69,7 +69,7 @@ export default function CalcBasic() {
 
     return (
         <div className="flex flex-col items-center justify-center py-20">
-            <h1 className="text-3xl font-bold mb-4">Basic Calculator</h1>
+            <h1 className="text-3xl font-handjet mb-8">Basic Calculator</h1>
             <div className="bg-white shadow-md rounded-lg p-6 w-[400px]">
                 <input
                     type="text"
