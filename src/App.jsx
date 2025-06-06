@@ -4,6 +4,7 @@ import InvestCalcPage from './pages/InvestCalcPage'
 import BasicCalc from './pages/BasicCalc'
 import Home from './pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,8 @@ function App() {
         <Route path="/investmentcalc" element={<InvestCalcPage />} />
         <Route path="/" element={<Home />} />
       </Routes>
+
+      <Footer />
 
     </BrowserRouter>
   )
