@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="flex sticky top-0 w-full justify-between items-center font-handjet p-4 px-10 bg-blue-500 text-white">
+        <header className="flex sticky top-0 w-full justify-between items-center font-turret p-4 px-10 bg-blue-500 text-white">
             <h1 className="text-4xl">Calculators</h1>
             <nav className="text-2xl">
                 <ul className="flex space-x-8">
