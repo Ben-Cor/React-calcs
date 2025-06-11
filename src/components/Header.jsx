@@ -4,8 +4,7 @@ export default function Header() {
             <h1 className="text-4xl">Calculators</h1>
             <nav className="text-2xl">
                 <ul className="flex space-x-8">
-                    <li><a href="/" className="hover:underline">Home</a></li>
-                    <li><a href="/basiccalc" className="hover:underline">Basic Calculator</a></li>
+                    <li><a href="/" className="hover:underline">Basic Calculator</a></li>
                     <li><a href="/investmentcalc" className="hover:underline">Investment Calculator</a></li>
                 </ul>
             </nav>
