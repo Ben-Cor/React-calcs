@@ -1,10 +1,11 @@
 import CalcBasic from "../components/CalcBasic";
-import Header from "../components/Header";
 
 export default function BasicCalc() {
     return (
-        <div className='bg-gray-100 min-h-screen'>
-            <CalcBasic />
+        <div className='flex flex-col min-h-[calc(100vh-6rem)] w-full bg-gray-100 overflow-hidden'>
+            <main className="flex-grow overflow-auto">
+                <CalcBasic />
+            </main>
         </div>
     );
 }
