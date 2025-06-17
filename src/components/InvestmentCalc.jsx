@@ -54,7 +54,7 @@ const handleClickReset = (e) => {
 
     return (
         <section>
-            <h2 className=" text-xl md:text-3xl font-turret pb-4 flex justify-center items-center pt-20">Investment Calculator</h2>
+            <h2 className="text-3xl font-turret pb-4 flex justify-center items-center pt-20">Investment Calculator</h2>
             <InvestmentInputs userInput={userInput} handleChangeInput={handleChangeInput} handleClickReset={handleClickReset} error={errorMessage} />
             {errorMessage === "" && <InvestmentOuputs userInput={userInput} />}
         </section>

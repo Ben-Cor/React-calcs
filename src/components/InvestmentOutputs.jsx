@@ -64,23 +64,23 @@ export default function InvestmentOuputs({ userInput }) {
 
     return (
         <div className="flex flex-col items-center justify-center pb-20">
-            <table className="w-[80%] border-[1px] border-gray-700 mt-4 text-center text-sm md:text-[1rem]">
+            <table className="w-[90%] border-[1px] border-gray-700 mt-4 text-center text-[0.75rem] md:w-[80%] md:text-[1rem]">
                 <thead>
                     <tr className="border-b-[1px] border-gray-700">
-                        <th className="border-r-[1px] p-1 md:p-0">Years</th>
-                        <th className="border-r-[1px] p-1 md:p-0">Investment Value</th>
-                        <th className="border-r-[1px] p-1 md:p-0">Interest Per Year</th>
-                        <th className="border-r-[1px] p-1 md:p-0">Total Interest</th>
+                        <th className="border-r-[1px] p-2 md:p-0">Years</th>
+                        <th className="border-r-[1px] p-2 md:p-0">Investment Value</th>
+                        <th className="border-r-[1px] p-2 md:p-0">Interest Per Year</th>
+                        <th className="border-r-[1px] p-2 md:p-0">Total Interest</th>
                         <th>Invested Capital</th>
                     </tr>
                 </thead>
                 <tbody>
                     {results.map((yearData, index) => (
                         <tr className="border-b-[1px] border-gray-700" key={index}>
-                            <td className="border-r-[1px]">{yearData.year}</td>
-                            <td className="border-r-[1px]">{yearData.investmentValue.toFixed(2)}</td>
-                            <td className="border-r-[1px]">{yearData.interestPerYear.toFixed(2)}</td>
-                            <td className="border-r-[1px]">{yearData.totalInterest.toFixed(2)}</td>
+                            <td className="border-r-[1px] p-1 md:p-0">{yearData.year}</td>
+                            <td className="border-r-[1px] p-1 md:p-0">{yearData.investmentValue.toFixed(2)}</td>
+                            <td className="border-r-[1px] p-1 md:p-0">{yearData.interestPerYear.toFixed(2)}</td>
+                            <td className="border-r-[1px] p-1 md:p-0">{yearData.totalInterest.toFixed(2)}</td>
                             <td>{yearData.investedCapital.toFixed(2)}</td>
                         </tr>
                     ))}
