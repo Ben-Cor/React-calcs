@@ -64,13 +64,13 @@ export default function InvestmentOuputs({ userInput }) {
 
     return (
         <div className="flex flex-col items-center justify-center pb-20">
-            <table className="w-[80%] border-[1px] border-gray-700 mt-4 text-center">
+            <table className="w-[80%] border-[1px] border-gray-700 mt-4 text-center text-sm md:text-[1rem]">
                 <thead>
                     <tr className="border-b-[1px] border-gray-700">
-                        <th className="border-r-[1px]">Years</th>
-                        <th className="border-r-[1px]">Investment Value</th>
-                        <th className="border-r-[1px]">Interest Per Year</th>
-                        <th className="border-r-[1px]">Total Interest</th>
+                        <th className="border-r-[1px] p-1 md:p-0">Years</th>
+                        <th className="border-r-[1px] p-1 md:p-0">Investment Value</th>
+                        <th className="border-r-[1px] p-1 md:p-0">Interest Per Year</th>
+                        <th className="border-r-[1px] p-1 md:p-0">Total Interest</th>
                         <th>Invested Capital</th>
                     </tr>
                 </thead>
