@@ -68,7 +68,7 @@ export default function CalcBasic() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center py-20">
+        <div className="flex flex-col items-center justify-center py-8 md:py-20">
             <h1 className="text-3xl font-turret mb-8">Basic Calculator</h1>
             <div className="bg-white shadow-md rounded-lg p-6 w-[80vw] md:w-[400px]">
                 <input
